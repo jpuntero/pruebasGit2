@@ -21,6 +21,9 @@
 	<update>
 		updateupdateupdateupdate
 	</update
+	<backup>
+		backupbackupbackupbackupbackupbackupbackup
+	</backup>
 
 	<scm>
 		<connection>scm:svn:http://srxmsubversion.mutua.es/svn/HOGAR/ContratacionHogar/App/trunk/ContratacionHogarParent</connection>
