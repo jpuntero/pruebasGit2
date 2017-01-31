@@ -1,4 +1,6 @@
 detallepoliza1
 detallepoliza2
+alta anuncio
+alta anuncio2
 alta tarea
 alta tarea2
