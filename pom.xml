@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- OJO, Si se cambia esto a mano, hay que acordarse de cambiar la dependencia de las configuraciones en la seccion de 
+		dependencias (no vale con sustituciones ${}) -->
+	<parent>
+		<groupId>es.mma.architecture.archetypes</groupId>
+		<artifactId>mma-hibernate-JEE6</artifactId>
+		<version>2.2.1</version>
+	</parent>
+
+	<groupId>es.mma.hogar.ContratacionHogar</groupId>
+	<artifactId>ContratacionHogarParent</artifactId>
+	<version>2.1.20-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>ContratacionHogar</name>
+	<description>ContratacionHogar</description>
+
+	<inceptionYear>2011</inceptionYear>
+
+	<scm>
+		<connection>scm:svn:http://srxmsubversion.mutua.es/svn/HOGAR/ContratacionHogar/App/trunk/ContratacionHogarParent</connection>
+	</scm>
+
+	<developers />
+	<!-- Necesario para incluir las configuraciones de spring del arquetipo.
+		OJO, la version debe coincidir con el parent -->
+	<dependencies>
+		<dependency>
+			<groupId>es.mma.architecture.archetypes</groupId>
+			<artifactId>mma-hibernate-JEE6-config</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+	</dependencies>
+	<dependencyManagement>
+		<!-- Ejemplo de cambio de dependencias con dependencyManagement -->
+		<!-- 
+		<dependencies>
+			<dependency>
+				<groupId>es.mma.architecture</groupId>
+				<artifactId>mma-arch-cache</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+		 -->
+	</dependencyManagement>
+	<properties>
+		<!-- Ejemplo de cambio de versiones de dependencias con variables
+		<mma-base-version>1.0.5</mma-base-version>
+		<mma-components-version>1.0.2</mma-components-version>
+		<mma-libraries-personas-version>1.0.6</mma-libraries-personas-version>  -->
+		<trabajo>46679</trabajo>
+		<mma-base-version>2.2.1</mma-base-version> 
+		<mma-arch-utils-version>3.2.1</mma-arch-utils-version>
+ 		<mma-arch-request-correlator-version>2.0.2</mma-arch-request-correlator-version> 
+	</properties>
+	<modules>
+		<module>../ContratacionHogarWeb</module>
+		<module>../ContratacionHogarEAR</module>
+	</modules>
+</project>
+
