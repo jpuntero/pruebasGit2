@@ -18,6 +18,9 @@
 	<description>ContratacionHogar</description>
 
 	<inceptionYear>2012</inceptionYear>
+	<update>
+		updateupdateupdateupdate
+	</update
 
 	<scm>
 		<connection>scm:svn:http://srxmsubversion.mutua.es/svn/HOGAR/ContratacionHogar/App/trunk/ContratacionHogarParent</connection>
